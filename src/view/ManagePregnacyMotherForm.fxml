@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="471.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagePregnacyMotherFormController">
+   <children>
+      <Label layoutX="219.0" text="Manage Pregnacy Mothers">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="543.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/unicef.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/clinic.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="7.0" onMouseClicked="#navigateToHome" prefHeight="45.0" prefWidth="115.0" style="-fx-background-color: lightgray;" text="Home" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="8.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home.png" />
+         </image>
+      </ImageView>
+      <JFXListView fx:id="lstMothers" layoutX="7.0" layoutY="102.0" prefHeight="311.0" prefWidth="275.0" />
+      <TextField fx:id="txtSearch" layoutX="7.0" layoutY="62.0" onKeyReleased="#txtSearchOnKeyReleased" prefHeight="40.0" prefWidth="275.0" promptText="Search For Mother's Name" />
+      <TitledPane animated="false" collapsible="false" layoutX="290.0" layoutY="62.0" prefHeight="398.0" prefWidth="457.0" text="Pregnacy Mother Informations">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="456.0" prefWidth="455.0">
+               <children>
+                  <JFXTextField fx:id="txtId" layoutX="10.0" layoutY="11.0" promptText="Mother's ID" />
+                  <JFXTextField fx:id="txtName" layoutX="10.0" layoutY="51.0" prefHeight="29.0" prefWidth="436.0" promptText="Mother's Name" />
+                  <JFXTextArea fx:id="txtAddress" layoutX="10.0" layoutY="91.0" prefHeight="75.0" prefWidth="436.0" promptText="Mother's Address" />
+                  <JFXTextField fx:id="txtNic" layoutX="10.0" layoutY="181.0" prefHeight="29.0" prefWidth="436.0" promptText="Mother's NIC (xxxxxxxxxv)" />
+                  <JFXTextField fx:id="txtContact" layoutX="10.0" layoutY="221.0" prefHeight="29.0" prefWidth="436.0" promptText="Mother's Contact No (xxx-xxxxxxx)" />
+                  <JFXTextField fx:id="txtEmail" layoutX="10.0" layoutY="261.0" prefHeight="29.0" prefWidth="436.0" promptText="Mother's Email (xxx@gmail.com)" />
+                  <JFXButton fx:id="btnSave" layoutX="11.0" layoutY="302.0" onAction="#btnSave_OnAction" prefHeight="45.0" prefWidth="115.0" style="-fx-background-color: lightgray;" text="Save" />
+                  <JFXButton fx:id="btnDelete" layoutX="330.0" layoutY="303.0" onAction="#btnDelete_OnAction" prefHeight="45.0" prefWidth="115.0" style="-fx-background-color: lightgray;" text="Delete" />
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="12.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/approve_and_update.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="331.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/delete.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TitledPane>
+      <JFXButton fx:id="btnAddNew" layoutX="7.0" layoutY="414.0" onAction="#btnAddNew_OnAction" prefHeight="45.0" prefWidth="275.0" style="-fx-background-color: lightgray;" text="+ New Mother" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/hospital.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

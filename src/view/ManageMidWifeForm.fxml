@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="568.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageMidWifeFormController">
+   <children>
+      <Label layoutX="238.0" text="Manage MidWife Informations">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/clinic.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="608.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/unicef.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="10.0" onMouseClicked="#navigateToHome" prefHeight="45.0" prefWidth="115.0" style="-fx-background-color: lightgray;" text="Home" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="11.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtSearch" layoutX="10.0" layoutY="60.0" onKeyReleased="#txtSearchOnKeyReleased" prefHeight="40.0" prefWidth="275.0" promptText="Search For The Name" />
+      <ListView fx:id="lstMidWife" layoutX="10.0" layoutY="101.0" prefHeight="408.0" prefWidth="275.0" />
+      <JFXButton fx:id="btnAddNew" layoutX="10.0" layoutY="510.0" onAction="#btnAddNew_OnAction" prefHeight="45.0" prefWidth="275.0" style="-fx-background-color: lightgray;" text="+ New MidWife" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="19.0" layoutY="514.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/hospital.png" />
+         </image>
+      </ImageView>
+      <TitledPane animated="false" collapsible="false" layoutX="294.0" layoutY="61.0" prefHeight="495.0" prefWidth="535.0" text="MidWife Informations">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <JFXTextField fx:id="txtId" layoutX="10.0" layoutY="10.0" promptText="MidWife ID" />
+                  <JFXTextField fx:id="txtName" layoutX="10.0" layoutY="50.0" prefHeight="29.0" prefWidth="513.0" promptText="MidWife Name" />
+                  <JFXTextArea fx:id="txtAddress" layoutX="10.0" layoutY="90.0" prefHeight="50.0" prefWidth="450.0" promptText="MidWife Address" />
+                  <JFXTextField fx:id="txtNic" layoutX="10.0" layoutY="155.0" prefHeight="29.0" prefWidth="350.0" promptText="MidWife NIC No (xxxxxxxxxv)" />
+                  <JFXTextField fx:id="txtContact" layoutX="10.0" layoutY="195.0" prefHeight="29.0" prefWidth="350.0" promptText="MidWife Contact No (xxx-xxxxxxx)" />
+                  <JFXTextField fx:id="txtEmail" layoutX="10.0" layoutY="235.0" prefHeight="29.0" prefWidth="513.0" promptText="MidWife Email (xxx@gmail.com)" />
+                  <JFXTextField fx:id="txtAmount" layoutX="10.0" layoutY="275.0" prefHeight="29.0" prefWidth="350.0" promptText="Amount Of Patients" />
+                  <JFXComboBox fx:id="cmbDivision" layoutX="10.0" layoutY="315.0" prefHeight="29.0" prefWidth="300.0" promptText="Grama Niladhari Division" />
+                  <JFXTextField fx:id="txtHospital" layoutX="10.0" layoutY="359.0" prefHeight="29.0" prefWidth="513.0" promptText="Appointed Hospital" />
+                  <JFXButton fx:id="btnDelete" layoutX="408.0" layoutY="401.0" onAction="#btnDelete_OnAction" prefHeight="45.0" prefWidth="115.0" style="-fx-background-color: lightgray;" text="Delete" />
+                  <JFXButton fx:id="btnSave" layoutX="10.0" layoutY="401.0" onAction="#btnSave_OnAction" prefHeight="45.0" prefWidth="115.0" style="-fx-background-color: lightgray;" text="Save" />
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="409.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/delete.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="10.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/approve_and_update.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>

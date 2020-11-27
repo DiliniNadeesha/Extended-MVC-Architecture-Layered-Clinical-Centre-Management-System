@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardController">
+   <children>
+      <Label alignment="CENTER" prefHeight="27.0" prefWidth="867.0" text="Sri Lanka Health Department" textFill="#043da1">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="266.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/unicef.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="567.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/sri_lanka.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutY="37.0" prefHeight="27.0" prefWidth="867.0" text="Pregnancy Clinical Centre" textFill="#070f1e">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMenu" alignment="CENTER" layoutY="288.0" prefHeight="30.0" prefWidth="867.0" text="Welcome" textFill="#e42107">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutY="338.0" prefHeight="27.0" prefWidth="867.0" text="Please select one of above main operations to proceed" textFill="#0c5ab2">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="366.0" prefHeight="27.0" prefWidth="867.0" text="Copyright 2020 IJSE - DEP 5 Version" textFill="#041528">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgPregMother" fitHeight="60.0" fitWidth="60.0" layoutX="21.0" layoutY="156.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/pregnant_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgAdminInfo" fitHeight="60.0" fitWidth="60.0" layoutX="308.0" layoutY="156.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/administrative_tools_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgMidWife" fitHeight="60.0" fitWidth="60.0" layoutX="403.0" layoutY="156.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/nurse_female_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgDoctor" fitHeight="60.0" fitWidth="60.0" layoutX="115.0" layoutY="156.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/stethoscope_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgPlaceOrder" fitHeight="60.0" fitWidth="60.0" layoutX="784.0" layoutY="156.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/order_history_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgClinicCard" fitHeight="60.0" fitWidth="60.0" layoutX="211.0" layoutY="156.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/report_card_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgTreatment" fitHeight="60.0" fitWidth="60.0" layoutX="593.0" layoutY="156.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/treatment_plan_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgLabTest" fitHeight="60.0" fitWidth="60.0" layoutX="498.0" layoutY="156.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/test_tube_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgMedItems" fitHeight="60.0" fitWidth="60.0" layoutX="689.0" layoutY="156.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/supplement_bottle_48px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="5.0" layoutY="114.0" prefHeight="21.0" prefWidth="862.0" style="-fx-background-color: darkblue;" />
+      <Label layoutY="236.0" prefHeight="21.0" prefWidth="867.0" style="-fx-background-color: darkblue;" />
+      <Label layoutX="381.0" layoutY="125.0" prefHeight="122.0" prefWidth="0.0" style="-fx-background-color: darkblue;" text="Label" />
+      <Label layoutX="285.0" layoutY="135.0" prefHeight="122.0" prefWidth="0.0" style="-fx-background-color: darkblue;" text="Label" />
+      <Label layoutX="188.0" layoutY="135.0" prefHeight="122.0" prefWidth="0.0" style="-fx-background-color: darkblue;" text="Label" />
+      <Label layoutX="93.0" layoutY="135.0" prefHeight="122.0" prefWidth="0.0" style="-fx-background-color: darkblue;" text="Label" />
+      <Label layoutX="666.0" layoutY="135.0" prefHeight="122.0" prefWidth="0.0" style="-fx-background-color: darkblue;" text="Label" />
+      <Label layoutX="570.0" layoutY="135.0" prefHeight="122.0" prefWidth="0.0" style="-fx-background-color: darkblue;" text="Label" />
+      <Label layoutX="475.0" layoutY="135.0" prefHeight="122.0" prefWidth="0.0" style="-fx-background-color: darkblue;" text="Label" />
+      <Label layoutY="114.0" prefHeight="122.0" prefWidth="0.0" style="-fx-background-color: darkblue;" text="Label" />
+      <Label layoutX="762.0" layoutY="122.0" prefHeight="122.0" prefWidth="0.0" style="-fx-background-color: darkblue;" text="Label" />
+      <Label layoutX="857.0" layoutY="122.0" prefHeight="122.0" prefWidth="0.0" style="-fx-background-color: darkblue;" text="Label" />
+   </children>
+</AnchorPane>
